@@ -20,33 +20,6 @@ const HeaderSpan = styled.span`
   justify-content: space-between;
 `
 
-const MigrateBanner = styled.div`
-  width: 100%;
-  padding: 12px 0;
-  display: flex;
-  justify-content: center;
-  background-color: ${({ theme }) => theme.uniswapPink};
-  color: ${({ theme }) => theme.inputBackground};
-  font-weight: 400;
-  text-align: center;
-  a {
-    color: ${({ theme }) => theme.inputBackground};
-    text-decoration: underline;
-  }
-`
-
-const MigrateBannerSmall = styled(MigrateBanner)`
-  @media (min-width: 960px) {
-    display: none;
-  }
-`
-
-const MigrateBannerLarge = styled(MigrateBanner)`
-  @media (max-width: 960px) {
-    display: none;
-  }
-`
-
 const HeaderElement = styled.div`
   margin: 1.25rem;
   display: flex;
@@ -118,20 +91,6 @@ const VersionToggle = styled.a`
 export default function Header() {
   return (
     <HeaderFrame>
-      <MigrateBannerSmall>
-        <b>V2 is here!&nbsp;</b> <Link href="https://migrate.uniswap.exchange/">Migrate your liquidity&nbsp;</Link>or{' '}
-        <Link href="https://uniswap.exchange"> &nbsp;use V2 ↗</Link>
-      </MigrateBannerSmall>
-      <MigrateBannerLarge>
-        <b>Uniswap V2 is here!&nbsp;</b> Move your liquidity now using the&nbsp;
-        <Link href="https://migrate.uniswap.exchange/">
-          <b>migration helper</b>
-        </Link>
-        &nbsp;or use the&nbsp;
-        <Link href="https://uniswap.exchange">
-          <b>Uniswap V2 Interface ↗</b>
-        </Link>
-      </MigrateBannerLarge>
       <HeaderSpan>
         <HeaderElement>
           <Title>

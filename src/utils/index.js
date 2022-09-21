@@ -27,7 +27,7 @@ export function safeAccess(object, path) {
 }
 
 const ETHERSCAN_PREFIXES = {
-  1: '',
+  21: '',
   3: 'ropsten.',
   4: 'rinkeby.',
   5: 'goerli.',
@@ -113,8 +113,8 @@ export function checkSupportedTheme(themeName) {
 
 export function getNetworkName(networkId) {
   switch (networkId) {
-    case 1: {
-      return 'the Main Ethereum Network'
+    case 21: {
+      return 'the Main Cortex Network'
     }
     case 3: {
       return 'the Ropsten Test Network'
@@ -269,8 +269,10 @@ export async function getTokenBalance(tokenAddress, address, library) {
   if (!isAddress(tokenAddress) || !isAddress(address)) {
     throw Error(`Invalid 'tokenAddress' or 'address' parameter '${tokenAddress}' or '${address}'.`)
   }
-
-  return getContract(tokenAddress, ERC20_ABI, library).balanceOf(address)
+  var balance = getContract(tokenAddress, ERC20_ABI, library).balanceOf(address)
+  console.log(tokenAddress);
+  console.log(balance);
+  return balance;
 }
 
 // get the token allowance
