@@ -703,7 +703,7 @@ export default function AddLiquidity({ params }) {
             </ExchangeRate>
             <span>
               {ethShare && tokenShare
-                ? `${amountFormatter(ethShare, 18, 4)} ETH + ${amountFormatter(
+                ? `${amountFormatter(ethShare, 18, 4)} CTXC + ${amountFormatter(
                     tokenShare,
                     decimals,
                     Math.min(4, decimals)
