@@ -683,13 +683,13 @@ export default function AddLiquidity({ params }) {
         <SummaryPanel>
           <ExchangeRateWrapper>
             <ExchangeRate>{t('exchangeRate')}</ExchangeRate>
-            <span>{marketRate ? `1 ETH = ${amountFormatter(marketRate, 18, 4)} ${symbol}` : ' - '}</span>
+            <span>{marketRate ? `1 CTXC = ${amountFormatter(marketRate, 18, 4)} ${symbol}` : ' - '}</span>
           </ExchangeRateWrapper>
           <ExchangeRateWrapper>
             <ExchangeRate>{t('currentPoolSize')}</ExchangeRate>
             <span>
               {exchangeETHBalance && exchangeTokenBalance
-                ? `${amountFormatter(exchangeETHBalance, 18, 4)} ETH + ${amountFormatter(
+                ? `${amountFormatter(exchangeETHBalance, 18, 4)} CTXC + ${amountFormatter(
                     exchangeTokenBalance,
                     decimals,
                     Math.min(4, decimals)
