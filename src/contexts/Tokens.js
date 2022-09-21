@@ -39,6 +39,12 @@ export const INITIAL_TOKENS_CONTEXT = {
       [SYMBOL]: 'MAT',
       [DECIMALS]: 18,
       [EXCHANGE_ADDRESS]: '0x0d1bb77b635abb5E9B77959e4F8ab4B5008EA71D'
+    },
+    '0xFf898c8ceEb6D55f7c77302aEeC327a78c2FD035': {
+      [NAME]: 'Cyclone',
+      [SYMBOL]: 'CYC',
+      [DECIMALS]: 18,
+      [EXCHANGE_ADDRESS]: '0xe56c36F12253077d3E617C426961c7068740A551'
     }
   },
   4: {

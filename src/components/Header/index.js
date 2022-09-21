@@ -105,12 +105,6 @@ export default function Header() {
               <h1 id="title">Uniswap</h1>
             </Link>
           </Title>
-          <TestnetWrapper>
-            <VersionToggle target="_self" href="https://v2.uniswap.exchange">
-              <VersionLabel isV1={false}>V2</VersionLabel>
-              <VersionLabel isV1={true}>V1</VersionLabel>
-            </VersionToggle>
-          </TestnetWrapper>
         </HeaderElement>
         <HeaderElement>
           <Web3Status />
