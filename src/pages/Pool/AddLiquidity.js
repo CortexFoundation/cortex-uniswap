@@ -311,12 +311,12 @@ export default function AddLiquidity({ params }) {
       return (
         <div>
           <div>
-            {t('youAreAdding')} {b(`${inputValue} ETH`)} {t('and')} {b(`${outputValue} ${symbol}`)} {t('intoPool')}
+            {t('youAreAdding')} {b(`${inputValue} CTXC`)} {t('and')} {b(`${outputValue} ${symbol}`)} {t('intoPool')}
           </div>
           <LastSummaryText>
             {t('youAreSettingExRate')}{' '}
             {b(
-              `1 ETH = ${amountFormatter(
+              `1 CTXC = ${amountFormatter(
                 getMarketRate(inputValueParsed, outputValueParsed, decimals),
                 18,
                 4,
@@ -335,7 +335,7 @@ export default function AddLiquidity({ params }) {
       return (
         <>
           <div>
-            {t('youAreAdding')} {b(`${amountFormatter(inputValueParsed, 18, 4)} ETH`)} {t('and')} {'at most'}{' '}
+            {t('youAreAdding')} {b(`${amountFormatter(inputValueParsed, 18, 4)} CTXC`)} {t('and')} {'at most'}{' '}
             {b(`${amountFormatter(outputValueMax, decimals, Math.min(decimals, 4))} ${symbol}`)} {t('intoPool')}
           </div>
           <LastSummaryText>
@@ -345,7 +345,7 @@ export default function AddLiquidity({ params }) {
             {t('totalSupplyIs')} {b(amountFormatter(totalPoolTokens, 18, 4))}
           </LastSummaryText>
           <LastSummaryText>
-            {t('tokenWorth')} {b(amountFormatter(ethPerLiquidityToken, 18, 4))} ETH {t('and')}{' '}
+            {t('tokenWorth')} {b(amountFormatter(ethPerLiquidityToken, 18, 4))} CTXC {t('and')}{' '}
             {b(amountFormatter(tokenPerLiquidityToken, decimals, Math.min(decimals, 4)))} {symbol}
           </LastSummaryText>
         </>
